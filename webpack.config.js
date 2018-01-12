@@ -10,7 +10,7 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
   module: {
@@ -34,16 +34,10 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jp?g|png|gif|svg)$/,
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: 'img/'
-            }
-          }
+          'file-loader?name=img/[name].[ext]',
+          'image-webpack-loader'
         ]
       }
     ]
@@ -53,6 +47,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['build'])
   ]
 };
