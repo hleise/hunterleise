@@ -2,6 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractPlugin = new ExtractTextPlugin({
   filename: 'main.css'
@@ -10,7 +11,7 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js'
   },
   module: {
@@ -47,6 +48,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
-    new CleanWebpackPlugin(['build'])
+    new CleanWebpackPlugin(['docs']),
+    new CopyWebpackPlugin([
+      { from: '404.html' },
+      { from: 'CNAME' }
+    ])
   ]
 };
