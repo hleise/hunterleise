@@ -1,18 +1,19 @@
 @import "./Home.scss";
+@import "./NavBar.scss";
+@import "./Variables.scss";
 
 html {
+  box-sizing: border-box;
   height: 100%;
   overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   overflow: auto;
-}
-
-light {
-  font-weight: lighter;
-  font-size: 0.7em;
-  font-style: italic;
 }
