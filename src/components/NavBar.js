@@ -15,7 +15,7 @@ export default function NavBar() {
       </Link>
       <Link to="/contact" className="menu-item">
         <i className="fa fa-address-book" aria-hidden="true" />
-        <span className="menu-item-text">Home</span>
+        <span className="menu-item-text">Contact</span>
       </Link>
     </Menu>
   );
