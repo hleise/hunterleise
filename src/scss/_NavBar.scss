@@ -20,17 +20,14 @@
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   position: absolute;
-  right: 8px;
-  top: 8px;
-  height: 40px;
-  width: 40px;
+  right: 15px;
+  top: 10px;
   cursor: pointer;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   color: white;
-  height: 50px;
 
   &:hover {
     color: $main-color;
@@ -44,6 +41,7 @@
   font-size: 1.15em;
 
   .menu-item {
+    @extend %unselectable;
     color: white;
     font-size: 1.5em;
     padding: 0.8em;

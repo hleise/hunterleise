@@ -51,7 +51,9 @@ module.exports = {
     new CleanWebpackPlugin(['docs']),
     new CopyWebpackPlugin([
       { from: '404.html' },
-      { from: 'CNAME' }
+      { from: 'CNAME' },
+      { from: 'src/favicon.ico' },
+      { from: 'src/hunter_leise_resume.pdf' }
     ])
   ]
 };

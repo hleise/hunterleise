@@ -1,10 +1,10 @@
 @import "./Variables";
 
-.home-page {
+.not-done-page {
   background-image:
     linear-gradient(
-      rgba($main-color, 0.9),
-      rgba($main-color, 0.5)
+        rgba($main-color, 0.9),
+        rgba($main-color, 0.5)
     ),
     url("../img/flatirons2.jpg");
 
@@ -40,12 +40,12 @@
     .description {
       font-weight: lighter;
       font-size: 0.7em;
-      font-style: italic;
       margin-top: 20px;
     }
 
-    .introduction {
-      margin: 0;
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }

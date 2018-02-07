@@ -28,9 +28,9 @@ export default function NavBar() {
         <i className="fa fa-star" aria-hidden="true" />
         <span className="menu-item-text">Skills</span>
       </Link>
-      <Link to="/play" className="menu-item">
+      <Link to="/interests" className="menu-item">
         <i className="fa fa-dribbble" aria-hidden="true" />
-        <span className="menu-item-text">Play</span>
+        <span className="menu-item-text">Interests</span>
       </Link>
       <Link to="/contact" className="menu-item">
         <i className="fa fa-address-book" aria-hidden="true" />
