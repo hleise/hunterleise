@@ -6,8 +6,16 @@
 
 html {
   box-sizing: border-box;
+  font-size: 17px;
   height: 100%;
   overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
 }
 
 *, *:before, *:after {
@@ -18,4 +26,8 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   overflow: auto;
+}
+
+.page-header {
+  margin: 0;
 }

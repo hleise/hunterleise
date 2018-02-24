@@ -20,7 +20,7 @@ export default function App() {
       <Route exact path="/education" component={NotDone} />
       <Route exact path="/skills" component={NotDone} />
       <Route exact path="/interests" component={NotDone} />
-      <Route exact path="/contact" component={NotDone} />
+      <Route exact path="/contact" component={Contact} />
       <Route path="*" component={Home} />
     </Switch>
   );

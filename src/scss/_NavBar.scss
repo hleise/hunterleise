@@ -54,6 +54,10 @@
 
   .menu-item:hover {
     color: $main-color;
+
+    i {
+      opacity: 1.0;
+    }
   }
 
   .menu-item-text {
