@@ -1,7 +1,7 @@
 @import './Variables.scss';
 
 // Pages
-@import './Home.scss';
+@import './pages/Home.scss';
 
 // Components
 @import './components/Contact.scss';
@@ -31,5 +31,6 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   margin: 0;
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
