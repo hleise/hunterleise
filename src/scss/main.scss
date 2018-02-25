@@ -29,5 +29,9 @@ body {
 }
 
 .page-header {
-  margin: 0;
+  color: white;
+  font-size: 5em;
+  margin-top: 0.05em;
+
+  @extend %unselectable;
 }

@@ -5,8 +5,8 @@ import { elastic as Menu } from 'react-burger-menu';
 export default function NavBar() {
   return (
     <Menu
-      customBurgerIcon={<i className="fa fa-bars" aria-hidden="true" style={{ fontSize: '36px' }} />}
-      customCrossIcon={<i className="fa fa-close" aria-hidden="true" style={{ fontSize: '36px' }} />}
+      customBurgerIcon={<i className="fa fa-bars" aria-hidden="true" style={{ fontSize: '3em' }} />}
+      customCrossIcon={<i className="fa fa-close" aria-hidden="true" style={{ fontSize: '3em' }} />}
     >
       <Link to="/" className="menu-item">
         <i className="fa fa-home" aria-hidden="true" />
