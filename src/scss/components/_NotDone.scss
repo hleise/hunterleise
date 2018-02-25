@@ -4,7 +4,7 @@
   align-items: center; // vertically center
   display: flex;
 
-  #not-done-content {
+  .not-done-content {
     color: $dark-gray;
     font-size: 3em;
     margin: 2em auto;
@@ -21,6 +21,10 @@
     a {
       color: $dark-gray;
       text-decoration: none;
+
+      &:hover {
+        color: $main-color;
+      }
     }
   }
 }
