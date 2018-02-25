@@ -1,0 +1,26 @@
+@import "../Variables";
+
+.not-done-container {
+  align-items: center; // vertically center
+  display: flex;
+
+  #not-done-content {
+    color: $dark-gray;
+    font-size: 3em;
+    margin: 2em auto;
+    max-width: 700px;
+    text-align: center;
+
+    @extend %unselectable;
+
+    .description {
+      font-size: 0.7em;
+      margin-top: 20px;
+    }
+
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+    }
+  }
+}

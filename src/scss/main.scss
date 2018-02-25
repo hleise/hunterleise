@@ -1,8 +1,13 @@
-@import "./Home.scss";
-@import "./Contact.scss";
-@import "./NavBar.scss";
-@import "./NotDone.scss";
-@import "./Variables.scss";
+@import './Variables.scss';
+
+// Pages
+@import './Home.scss';
+
+// Components
+@import './components/Contact.scss';
+@import './components/HiBanner.scss';
+@import './components/NavBar.scss';
+@import './components/NotDone.scss';
 
 html {
   box-sizing: border-box;
@@ -25,13 +30,6 @@ html {
 body {
   height: 100%;
   font-family: 'Lato', sans-serif;
+  margin: 0;
   overflow: auto;
-}
-
-.page-header {
-  color: white;
-  font-size: 5em;
-  margin-top: 0.05em;
-
-  @extend %unselectable;
 }

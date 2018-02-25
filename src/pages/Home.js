@@ -1,15 +1,20 @@
 import React from 'react';
+
+// Import Components
+import Contact from '../components/Contact';
+import HiBanner from '../components/HiBanner';
 import NavBar from '../components/NavBar';
+import NotDone from '../components/NotDone';
 
 export default function Home() {
   return (
     <div className="home-page">
+      <div id="top"></div>
       <NavBar />
-      <div id="content-container">
-        <p className="introduction">Hi, my name is</p>
-        <h1 className="introduction">Hunter Leise</h1>
-        <p className="description">I'm a student, developer, and aspiring entrepreneur.</p>
-      </div>
+      <HiBanner />
+      <NotDone />
+      <Contact />
+      <div id="bottom"></div>
     </div>
   );
 }

@@ -1,0 +1,48 @@
+@import "../Variables";
+
+.contact {
+  .contact-content {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact-item {
+      flex: 1;
+      font-size: 1.5em;
+      padding: 3em 1em;
+      text-align: center;
+      white-space: nowrap;
+
+      &:hover {
+        -webkit-filter: brightness(108%);
+      }
+
+      .contact-item-text {
+        color: white;
+        text-decoration: none;
+      }
+
+      i {
+        color: white;
+        font-size: 2em;
+        text-decoration: none;
+      }
+    }
+
+    #contact-email {
+      background-color: $google-red;
+    }
+
+    #contact-phone {
+      background-color: $google-yellow;
+    }
+
+    #contact-linkedin {
+      background-color: $google-green;
+    }
+
+    #contact-github {
+      background-color: $google-blue;
+    }
+  }
+}

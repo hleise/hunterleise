@@ -19,7 +19,8 @@
     "react": "^16.0.0",
     "react-burger-menu": "https://github.com/hleise/react-burger-menu.git",
     "react-dom": "^16.0.0",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

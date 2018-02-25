@@ -1,41 +1,44 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { elastic as Menu } from 'react-burger-menu';
 
 export default function NavBar() {
   return (
     <Menu
-      customBurgerIcon={<i className="fa fa-bars" aria-hidden="true" style={{ fontSize: '3em' }} />}
-      customCrossIcon={<i className="fa fa-close" aria-hidden="true" style={{ fontSize: '3em' }} />}
+      customBurgerIcon={<i className="fa fa-bars" aria-hidden="true"
+                           style={{ fontSize: '3em' }}/>}
+      customCrossIcon={<i className="fa fa-close" aria-hidden="true"
+                          style={{ fontSize: '3em' }}/>}
+      isOpen={false}
     >
-      <Link to="/" className="menu-item">
-        <i className="fa fa-home" aria-hidden="true" />
+      <HashLink smooth to="/#top" className="menu-item">
+        <i className="fa fa-home" aria-hidden="true"/>
         <span className="menu-item-text">Home</span>
-      </Link>
-      <Link to="/about" className="menu-item">
-        <i className="fa fa-info-circle" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-info-circle" aria-hidden="true"/>
         <span className="menu-item-text">About</span>
-      </Link>
-      <Link to="/experience" className="menu-item">
-        <i className="fa fa-briefcase" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-briefcase" aria-hidden="true"/>
         <span className="menu-item-text">Experience</span>
-      </Link>
-      <Link to="/education" className="menu-item">
-        <i className="fa fa-graduation-cap" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-graduation-cap" aria-hidden="true"/>
         <span className="menu-item-text">Education</span>
-      </Link>
-      <Link to="/skills" className="menu-item">
-        <i className="fa fa-star" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-star" aria-hidden="true"/>
         <span className="menu-item-text">Skills</span>
-      </Link>
-      <Link to="/interests" className="menu-item">
-        <i className="fa fa-dribbble" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-dribbble" aria-hidden="true"/>
         <span className="menu-item-text">Interests</span>
-      </Link>
-      <Link to="/contact" className="menu-item">
-        <i className="fa fa-address-book" aria-hidden="true" />
+      </HashLink>
+      <HashLink smooth to="/#bottom" className="menu-item">
+        <i className="fa fa-address-book" aria-hidden="true"/>
         <span className="menu-item-text">Contact</span>
-      </Link>
+      </HashLink>
     </Menu>
   );
 }
