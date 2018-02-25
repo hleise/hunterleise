@@ -9,12 +9,12 @@ import NotDone from '../components/NotDone';
 export default function Home() {
   return (
     <div className="home-page">
-      <div id="top"></div>
-      <NavBar />
+      {/*<div id="top"></div>*/}
+      {/*<NavBar />*/}
       <HiBanner />
       <NotDone />
       <Contact />
-      <div id="bottom"></div>
+      {/*<div id="bottom"></div>*/}
     </div>
   );
 }
